@@ -1,0 +1,50 @@
+=== PRIMARY MODEL: PHC Doctor Coverage ===
+
+
+Call:
+lm(formula = phc_doctor_coverage ~ bhcpf_per_capita + igr_per_capita, 
+    data = analysis_combined)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.20039 -0.05647 -0.02691  0.03519  0.22009 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)  
+(Intercept)       2.147e-01  1.043e-01   2.058   0.0511 .
+bhcpf_per_capita -5.410e-04  4.493e-04  -1.204   0.2407  
+igr_per_capita    1.660e-06  7.265e-07   2.285   0.0318 *
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.1024 on 23 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.3197,	Adjusted R-squared:  0.2605 
+F-statistic: 5.403 on 2 and 23 DF,  p-value: 0.01192
+
+
+
+=== SECONDARY MODEL: Total Doctor Density ===
+
+
+Call:
+lm(formula = doctor_density_per_10000 ~ bhcpf_per_capita + igr_per_capita, 
+    data = analysis_combined)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-0.8541 -0.5638 -0.3220  0.1915  2.2919 
+
+Coefficients:
+                   Estimate Std. Error t value Pr(>|t|)    
+(Intercept)      -1.055e+00  9.122e-01  -1.156   0.2593    
+bhcpf_per_capita  6.828e-03  3.929e-03   1.738   0.0956 .  
+igr_per_capita    3.321e-05  6.353e-06   5.227 2.66e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.8956 on 23 degrees of freedom
+  (1 observation deleted due to missingness)
+Multiple R-squared:  0.5449,	Adjusted R-squared:  0.5053 
+F-statistic: 13.77 on 2 and 23 DF,  p-value: 0.0001171
+
