@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23404919.svg)](https://doi.org/10.5281/zenodo.23404919)
+
 # BHCPF Disbursement and PHC Doctor Coverage in Nigeria
 
 An analysis of whether federal health financing (BHCPF) predicts
